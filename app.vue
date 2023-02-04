@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import Listing from "~/components/Listing.vue";
 const { refreshSessionContext } = useSessionContext();
 
 onMounted(() => {
@@ -8,10 +7,10 @@ onMounted(() => {
 </script>
 
 <template>
-  <div id="app">
-    <Listing />
+  <div id="app" class="flex justify-center">
+    <div class="grid grid-cols-2 gap-5 max-w-screen-md">
+      <ListingModified />
+      <Cart />
+    </div>
   </div>
 </template>
-<style>
-/*@import "./style.css";*/
-</style>
