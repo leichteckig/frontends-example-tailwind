@@ -1,5 +1,6 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+  // Not providing Shopware API credentials will use a default backend for testing purposes
   // shopware: {
   //   shopwareEndpoint: process.env.API_URL,
   //   shopwareAccessToken: process.env.API_ACCESS_TOKEN,
